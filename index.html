@@ -1,12 +1,55 @@
 <!DOCTYPE html>
 <html lang="en-US">
+
 <head>
   <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
   <link href="css/styles.css" rel="stylesheet" type="text/css">
   <script src="js/jquery-3.6.0.js"></script>
   <script src="js/scripts.js"></script>
-  <title></title>
+  <title>Chocolate Bars</title>
 </head>
+
 <body>
+  <div class="container">
+    <div class="form">
+      <h1>Awe! Nuts in Chocolate Bars!</h1>
+      <form id="choco-form">
+        <h4>Size?</h4>
+        <div class="radio">
+          <label>
+            <input type="radio" name="size" value="small" id="small">
+            Small $1
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="size" value="medium" id="medium">
+            Medium $2
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="size" value="large" id="large">
+            Large $3
+          </label>
+        </div>
+        <h4>How do you like your nuts?</h4>
+        <input type="checkbox" id="nuts" name="nuts" value="hazelnuts"> Hazelnuts $2
+        <input type="checkbox" id="nuts" name="nuts" value="almonds"> Almonds $2
+        <input type="checkbox" id="nuts" name="nuts" value="peanuts"> Peanuts $2
+        <div>
+          <button type="submit" class="btn btn-warning">Give me chocolate!!</button>
+        </div>
+      </form>
+      <div id="orderConfirm">
+        <h3>Your chocolate bar!</h3>
+        <p>You bought a <span id="sizeOption"></span> chocolate bar with:
+          <span id="nutOption"></span>
+          <span id="costOutput"></span>
+        </p>
+      </div>
+    </div>
+  </div>
 </body>
+
 </html>
